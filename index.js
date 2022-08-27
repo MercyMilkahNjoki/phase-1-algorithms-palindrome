@@ -1,18 +1,18 @@
 function isPalindrome(word) {
-  newWord = word.split('')
-  reversedWord = newWord.reverse()
-  jointWord = reversedWord.join('')
+  const newWord = word.split('')
+  const reversedWord = newWord.reverse()
+  const jointWord = reversedWord.join('')
   if(word === jointWord){
     return true
   }else{
     return false
   }
 }
-//  isPalindrome('aba')
-//  isPalindrome('racecar')
-//  isPalindrome('a')
-//  isPalindrome('robot')
-//  isPalindrome('ab')
+/*TESTCASE
+madam === madam //true
+robot === tobor //false
+ */
+
 /* 
   PSEUDOCODE
   1.use split method to split the word 
@@ -33,7 +33,6 @@ otherwise if the result is false
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
-  // add your own custom tests in here
   console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
 
